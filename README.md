@@ -58,8 +58,7 @@ AI не обязателен: без ключей работают эврист�
 Нужны Python 3.11+ и `ffmpeg` в `PATH`.
 
 ```bash
-cd albumizer
-pip install -e .[dev]
+pip install -e ".[dev]"      # или: pip install -r requirements.txt
 cp .env.example .env   # вписать BOT_TOKEN и, по желанию, ключи AI
 python -m albumizer
 pytest
